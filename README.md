@@ -1,5 +1,5 @@
 # 🌀🌀🌀 🤖 StormSurge Veil Tradebot 🤖 🌀🌀🌀
-A sample tradebot for market making on [Veil](https://veil.co).
+A sample tradebot for market making on  StormSurge PMs on [Veil](https://veil.co).
 
 >⚠️ Disclaimer: This tradebot is for demonstration purposes only. We do not recommend running it in production without changing the trade logic. These strategies are intentionally naive for educational purposes.
 
