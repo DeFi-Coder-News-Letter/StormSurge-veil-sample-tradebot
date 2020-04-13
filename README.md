@@ -1,4 +1,4 @@
-# 🤖 Sample StormSurance Veil Tradebot 🌀🌀🌀
+# 🤖 Sample StormSurge Veil Tradebot 🌀🌀🌀
 A sample tradebot for market making on [Veil](https://veil.co).
 
 >⚠️ Disclaimer: This tradebot is for demonstration purposes only. We do not recommend running it in production without changing the trade logic. These strategies are intentionally naive for educational purposes.
@@ -34,7 +34,7 @@ The `simple-scalar` command has two options:
 * `-s, --spread <spread>`  Specify the desired spread between 0 and 1. The default is `0.06` (or 6%).
 * `-a, --amount <amount>` Specify the desired order amount of shares. The default is `0.5`.
 
-The `simple-scalar` tradebot looks up the current spot price from the market's data feed and makes orders at the specified spread around that price. [Review the simple-scalar code](https://github.com/veilco/veil-sample-tradebot/blob/master/src/scripts/simpleScalar.ts).
+The `simple-scalar` tradebot looks up the current spot price from the market's data feed and makes orders at the specified spread around that price. [Review the simple-scalar code](https://github.com/DeFi-Coder-News-Letter/StormSurge-veil-sample-tradebot/blob/master/src/scripts/simpleScalar.ts).
 
 ## Run simple binary tradebot
 ```
@@ -42,10 +42,10 @@ node dist/index.js simple-binary <market slug> --spread 0.1 --amount 2
 ```
 The `simple-binary` command has the same two options as `sample-scalar`. See above.
 
-The `simple-binary` tradebot makes orders at the specified spread around a hard-coded price. [Review the simple-binary code](https://github.com/veilco/veil-sample-tradebot/blob/master/src/scripts/simpleBinary.ts).
+The `simple-binary` tradebot makes orders at the specified spread around a hard-coded price. [Review the simple-binary code](https://github.com/DeFi-Coder-News-Letter/StormSurge-veil-sample-tradebot/blob/master/src/scripts/simpleBinary.ts).
 
 ## Run many market makers at once
 ```
 node dist/index.js bulk --spread 0.06 --amount 0.5
 ```
-The `bulk` command pulls all open markets from Veil's API and attempts to market make in them all based on their type (i.e. `yesno` or `scalar`). [Review the code](https://github.com/veilco/veil-sample-tradebot/blob/master/src/BulkMarketMaker.ts).
+The `bulk` command pulls all open markets from Veil's API and attempts to market make in them all based on their type (i.e. `yesno` or `scalar`). [Review the code](https://github.com/DeFi-Coder-News-Letter/StormSurge-veil-sample-tradebot/blob/master/src/BulkMarketMaker.ts).
